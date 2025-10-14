@@ -1,0 +1,68 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentor Signup | Thrive Club</title>
+  <link href="/css/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    .font-display { font-family: 'Playfair Display', serif; }
+    .font-body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-black text-white font-body min-h-screen flex flex-col items-center justify-center relative px-4 py-12">
+
+  <!-- Back Arrow -->
+  <a href="/landing" class="absolute top-6 left-6 flex items-center text-[#873ac2] hover:text-[#a978dd] transition">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-7 h-7 mr-1">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+    </svg>
+    <span>Back</span>
+  </a>
+
+  <!-- Signup Card -->
+  <div class="bg-black border border-[#873ac2] rounded-2xl shadow-lg p-10 w-full max-w-md mt-10">
+    <h1 class="text-3xl font-display text-center text-[#873ac2] mb-8">Mentor Signup</h1>
+    
+    <form id="mentorSignupForm" class="space-y-5" enctype="multipart/form-data">
+      <div>
+        <label class="block mb-2 text-sm font-semibold text-white/80">Full Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" class="w-full bg-black border border-[#873ac2]/60 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#873ac2]" required>
+      </div>
+
+      <div>
+        <label class="block mb-2 text-sm font-semibold text-white/80">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" class="w-full bg-black border border-[#873ac2]/60 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#873ac2]" required>
+      </div>
+
+      <div>
+        <label class="block mb-2 text-sm font-semibold text-white/80">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter your password" class="w-full bg-black border border-[#873ac2]/60 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#873ac2]" required>
+      </div>
+
+      <div>
+        <label class="block mb-2 text-sm font-semibold text-white/80">Confirm Password</label>
+        <input id="confirmPassword" type="password" placeholder="Confirm password" class="w-full bg-black border border-[#873ac2]/60 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#873ac2]" required>
+      </div>
+
+      <div>
+        <label class="block mb-2 text-sm font-semibold text-white/80">Profile Picture</label>
+        <input id="profilePicture" name="profilePicture" type="file" accept="image/*" class="w-full text-sm text-gray-400 bg-black border border-[#873ac2]/60 rounded-lg px-3 py-2 cursor-pointer focus:outline-none file:bg-[#873ac2] file:text-white file:border-none file:rounded-lg file:px-3 file:py-1.5 hover:file:bg-[#a978dd] transition" required>
+      </div>
+
+      <button type="submit" class="w-full mt-4 bg-[#873ac2] hover:bg-[#a978dd] text-white font-semibold py-2 rounded-lg transition">
+        Sign Up
+      </button>
+    </form>
+
+    <p class="mt-6 text-center text-white/70">
+      Want to join as a trainee?  
+      <a href="/trainee-signup" class="text-[#873ac2] hover:text-[#a978dd] font-semibold transition">Sign up as a Trainee</a>
+    </p>
+  </div>
+
+ 
+  <script src="/js/mentorSignup.js"></script>
+</body>
+</html>

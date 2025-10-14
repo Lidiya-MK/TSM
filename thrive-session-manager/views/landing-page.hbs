@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thrive Club</title>
+  <link href="css/output.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Playfair+Display:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    /* Font families for Tailwind overrides */
+    .font-display { font-family: 'Playfair Display', serif; }
+    .font-body { font-family: 'Montserrat', sans-serif; }
+    .font-accent { font-family: 'Pacifico', cursive; }
+  </style>
+</head>
+<body class="bg-black text-white font-body scroll-smooth">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-black/95 backdrop-blur-sm z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="flex items-center space-x-2">
+        <img src="images/logo.png" alt="Thrive Club Logo" class="h-10 w-10 object-contain">
+        <span class="text-2xl font-display text-[#7f2771]">Thrive Club</span>
+      </a>
+      <div class="space-x-6 flex items-center">
+        <a href="#about" class="hover:text-[#7f2771] transition font-semibold">About</a>
+        <a href="#mission" class="hover:text-[#7f2771] transition font-semibold">Mission</a>
+        <a href="#objectives" class="hover:text-[#7f2771] transition font-semibold">Objectives</a>
+        <a href="#cta" class="hover:text-[#7f2771] transition font-semibold">Join</a>
+        <a href="/trainee-login" class="bg-[#7f2771] hover:bg-[#a02a8b] text-white py-1 px-4 rounded font-accent transition">Login</a>
+        <a href="/trainee-signup" class="border border-[#7f2771] hover:bg-[#7f2771] hover:text-white py-1 px-4 rounded font-accent transition">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-black">
+    <h1 class="text-6xl font-display mb-4 text-[#7f2771] drop-shadow-lg">Thrive Club</h1>
+    <p class="text-3xl font-accent mb-6 text-white">Women for Women</p>
+    <p class="max-w-2xl text-white/80 mb-8 font-body">
+      Empowering female students at CTBE through mentorship, training, and a supportive community.
+    </p>
+    <div class="space-x-4">
+      <a href="/trainee-signup" class="bg-[#7f2771] hover:bg-[#a02a8b] text-white font-accent py-3 px-6 rounded transition duration-300">Join Now</a>
+      <a href="/trainee-login" class="border border-[#7f2771] hover:bg-[#7f2771] hover:text-white text-[#7f2771] font-accent py-3 px-6 rounded transition duration-300">Login</a>
+    </div>
+  </section>
+
+<!-- About Section -->
+<section id="about" class="relative py-20 px-6">
+  <div class="relative max-w-5xl mx-auto text-center text-white">
+    <h2 class="text-4xl font-display mb-6 text-[#7f2771] drop-shadow-lg">About Thrive Club</h2>
+    <p class="text-white/80 mb-4 font-body text-lg">
+      Women make up only <span class="text-[#7f2771] font-semibold">22%</span> of STEM university students in Ethiopia, leaving a gap in visible role models.
+    </p>
+    <p class="text-white/80 font-body text-lg">
+      Thrive Club <span class="text-[#7f2771] font-semibold">fosters mentorship and support</span> between senior and junior female students, creating a space to grow academically, professionally, and personally.
+    </p>
+  </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section id="mission" class="relative py-20 px-6">
+  <!-- Split Layout -->
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-4xl font-display mb-6 text-[#7f2771]">Mission & Vision</h2>
+      <p class="text-white/80 mb-4 font-body text-lg">
+        Our <span class="text-[#7f2771] font-semibold">mission</span> is to cultivate a culture of mentorship, supporting junior students through leadership, collaboration, and confidence-building.
+      </p>
+      <p class="text-white/80 font-body text-lg">
+        We envision a <span class="text-[#7f2771] font-semibold">network of empowered women</span>, where guidance is shared and success is replicated through mentorship.
+      </p>
+    </div>
+    <div class="relative">
+      <img src="images/p2.png" alt="Thrive Club Mission" class="rounded-lg shadow-2xl w-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-lg"></div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Objectives -->
+  <section id="objectives" class="py-20 px-6 max-w-6xl mx-auto">
+    <h2 class="text-4xl font-display mb-12 text-[#7f2771] text-center">Objectives</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-black border border-[#7f2771] p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 class="text-xl font-semibold mb-3 font-display">Confidence Building</h3>
+        <p class="text-white/80 font-body">Helping students gain confidence in their technical skills through monitored and consistent training.</p>
+      </div>
+      <div class="bg-black border border-[#7f2771] p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 class="text-xl font-semibold mb-3 font-display">Durable Skills</h3>
+        <p class="text-white/80 font-body">Cultivating communication, collaboration, and leadership through workshops for personal and professional growth.</p>
+      </div>
+      <div class="bg-black border border-[#7f2771] p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 class="text-xl font-semibold mb-3 font-display">Community Growth</h3>
+        <p class="text-white/80 font-body">Creating a community where opportunities are shared and the success of senior students is replicated through juniors.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="cta" class="bg-black py-20 px-6 text-center">
+    <h2 class="text-4xl font-display mb-6 text-[#7f2771]">Ready to Thrive?</h2>
+    <p class="text-white/80 mb-8 font-body">Join our mentorship program and become part of a community of empowered women in STEM.</p>
+    <div class="space-x-4">
+      <a href="/trainee-signup" class="bg-[#7f2771] hover:bg-[#a02a8b] text-white font-accent py-3 px-6 rounded transition duration-300">Sign Up</a>
+      <a href="/trainee-login" class="border border-[#7f2771] hover:bg-[#7f2771] hover:text-white text-[#7f2771] font-accent py-3 px-6 rounded transition duration-300">Login</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-8 text-center text-white/50 font-body">
+    &copy; 2025 Thrive Club. All rights reserved.
+  </footer>
+
+</body>
+</html>

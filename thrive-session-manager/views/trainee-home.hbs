@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainee Home | Thrive Club</title>
+  <link href="/css/output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    .font-display { font-family: 'Playfair Display', serif; }
+    .font-body { font-family: 'Montserrat', sans-serif; }
+  </style>
+</head>
+<body class="bg-black text-white font-body min-h-screen">
+
+<!-- Header -->
+<header class="flex justify-between items-center px-8 py-5 border-b border-[#7f2771]/50">
+  <div class="flex items-center space-x-3">
+    <img src="/images/logo.png" alt="Thrive Club Logo" class="h-10 w-10 object-contain">
+    <h1 class="text-2xl font-display text-[#7f2771]">Thrive Trainee</h1>
+  </div>
+
+  <div class="flex items-center space-x-4">
+    <!-- Profile Section -->
+    <div class="flex flex-col items-center">
+      <div class="w-10 h-10 rounded-full border-2 border-[#7f2771] overflow-hidden mb-1">
+        <img src="/images/placeholder.png" alt="Profile Picture" class="w-full h-full object-cover">
+      </div>
+      <p class="text-sm text-white/80 font-semibold">Trainee Name</p>
+    </div>
+
+    <!-- Logout Button -->
+    <button class="px-4 py-2 bg-[#7f2771]/20 text-[#7f2771] border border-[#7f2771]/60 rounded-lg hover:bg-[#7f2771]/30 transition font-semibold">
+      Logout
+    </button>
+  </div>
+</header>
+
+
+  <!-- Main Section -->
+  <main class="p-8">
+    <h2 class="text-3xl font-display text-white mb-8">Sessions</h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Session Card -->
+      <div class="bg-black border border-[#7f2771]/60 rounded-xl overflow-hidden shadow-lg hover:shadow-[#7f2771]/30 hover:shadow-2xl transition duration-300">
+        <img src="/images/ux.png" alt="Session" class="w-full h-40 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-display text-[#7f2771] mb-2">UI/UX Design Workshop</h3>
+          <p class="text-white/80 text-sm mb-3">
+            Learn how to create user-friendly and visually appealing designs with practical exercises.
+          </p>
+          <div class="text-white/60 text-sm">
+            <p>Date: <span class="text-white">Oct 15, 2025</span></p>
+            <p>Instructor: <span class="text-white">Ms. Samrawit</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Duplicate as needed -->
+      <div class="bg-black border border-[#7f2771]/60 rounded-xl overflow-hidden shadow-lg hover:shadow-[#7f2771]/30 hover:shadow-2xl transition duration-300">
+        <img src="/images/p2.png" alt="Session" class="w-full h-40 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-display text-[#7f2771] mb-2">Team Collaboration Training</h3>
+          <p class="text-white/80 text-sm mb-3">
+            Strengthen teamwork, communication, and leadership through guided sessions.
+          </p>
+          <div class="text-white/60 text-sm">
+            <p>Date: <span class="text-white">Oct 18, 2025</span></p>
+            <p>Instructor: <span class="text-white">Ms Lidya G</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
