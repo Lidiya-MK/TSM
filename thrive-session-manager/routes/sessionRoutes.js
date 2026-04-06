@@ -27,7 +27,7 @@ const upload = multer({ storage });
 
 // these ones are for mentors only
 router.post("/", protect(), upload.single("coverImage"), createSession);
-router.put("/:id", protect(), upload.single("coverImage"), updateSession);
+router.patch("/:id", protect(), upload.single("coverImage"), updateSession);
 router.delete("/:id", protect(), deleteSession);
 router.get("/:id", protect(), getSessionById);
 
